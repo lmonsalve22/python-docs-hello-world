@@ -10,8 +10,8 @@ import pandas as pd
 import dash_bootstrap_components as dbc
 import pandas_datareader.data as web
 import datetime
-import dash_core_components as dcc
 import dash_html_components as html
+import dash_core_components as dcc
 """
 import dash
 import dash_core_components as dcc
@@ -22,7 +22,7 @@ from flask import Flask
 """
 #app = Flask(__name__)
 
-
+"""
 server = Flask(__name__)
 df = pd.read_csv("mystocks.csv")
 
@@ -102,7 +102,6 @@ app.layout = dbc.Container([
 # Callback section: connecting the components
 # ************************************************************************
 # Line chart - Single
-"""
 @app.callback(
     Output('line-fig', 'figure'),
     Input('my-dpdn', 'value')
@@ -134,14 +133,15 @@ def update_graph(stock_slctd):
     dff = dff[dff['Date']=='2020-12-03']
     fighist = px.histogram(dff, x='Symbols', y='Close')
     return fighist
-
+"""
 #Sentencias para abrir el servidor al ejecutar este script
 #if __name__ == '__main__':
 #    app.run_server(port=7000)
 #@app.route("/")
 #def hello():
 #    return "Hello, World! 2.1"
-"""
+
 @server.route("/dash")
 def hello():
-    return app.index()
+    #return app.index()
+    return "Hello, World!"
