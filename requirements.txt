@@ -1,1 +1,10 @@
 Flask>=1.0,<=1.1.2
+dash
+dash_core_components as dcc
+dash_html_components as html
+dash.dependencies
+plotly.express
+dash_bootstrap_components
+pandas
+pandas_datareader
+datetime
