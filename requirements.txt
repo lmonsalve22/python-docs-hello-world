@@ -3,3 +3,8 @@ dash
 plotly
 pandas
 datetime
+pandas-datareader
+dash-bootstrap-components
+plotly-express
+dash-html-components
+dash-core-components
