@@ -22,7 +22,6 @@ from flask import Flask
 """
 #app = Flask(__name__)
 
-"""
 server = Flask(__name__)
 df = pd.read_csv("mystocks.csv")
 
@@ -133,7 +132,7 @@ def update_graph(stock_slctd):
     dff = dff[dff['Date']=='2020-12-03']
     fighist = px.histogram(dff, x='Symbols', y='Close')
     return fighist
-"""
+
 #Sentencias para abrir el servidor al ejecutar este script
 #if __name__ == '__main__':
 #    app.run_server(port=7000)
