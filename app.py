@@ -102,7 +102,7 @@ app.layout = dbc.Container([
 # Callback section: connecting the components
 # ************************************************************************
 # Line chart - Single
-
+"""
 @app.callback(
     Output('line-fig', 'figure'),
     Input('my-dpdn', 'value')
@@ -141,7 +141,7 @@ def update_graph(stock_slctd):
 #@app.route("/")
 #def hello():
 #    return "Hello, World! 2.1"
-
+"""
 @server.route("/dash")
 def hello():
     return app.index()
