@@ -20,7 +20,7 @@ import plotly.graph_objs as go
 import pandas as pd
 from flask import Flask
 """
-app = Flask(__name__)
+#app = Flask(__name__)
 """
 server = Flask(__name__)
 df = pd.read_csv("mystocks.csv")
@@ -54,6 +54,7 @@ def hello():
 
 """
 app = Flask(__name__)
+df = pd.read_csv("mystocks.csv")
 
 @app.route("/")
 def hello():
