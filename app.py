@@ -20,8 +20,8 @@ import plotly.graph_objs as go
 import pandas as pd
 from flask import Flask
 """
-#app = Flask(__name__)
-
+app = Flask(__name__)
+"""
 server = Flask(__name__)
 df = pd.read_csv("mystocks.csv")
 
@@ -50,4 +50,11 @@ app.layout = dbc.Container([
 @server.route("/dash")
 def hello():
     #return app.index()
+    return app.index();
+
+"""
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
     return "Hello, World!"
