@@ -1,12 +1,2 @@
 Flask>=1.0,<=1.1.2
-dash
-plotly
-pandas
-datetime
-pandas-datareader
-dash-bootstrap-components
-plotly-express
-dash-html-components
-dash-core-components
-dash-extensions
-plotly.express
+geemap
