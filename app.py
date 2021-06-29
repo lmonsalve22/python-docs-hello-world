@@ -1,6 +1,9 @@
 from flask import Flask
+import geemap
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, Luis!"
+    Map = geemap.Map(center=(40, -100), zoom=4)    
+    return Map
